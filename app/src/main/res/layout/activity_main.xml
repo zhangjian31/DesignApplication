@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zhangjian.designapplication.MainActivity">
+
+    <!--
+    app:backgroundTint背景色
+    app:fabSize="normal"大小
+    app:elevation阴影大小
+    app:rippleColor点击颜色
+    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/snackbar_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:src="@mipmap/ic_launcher"
+            app:backgroundTint="#ff0000"
+            app:elevation="0dp"
+            app:fabSize="normal"
+            app:rippleColor="#00ff00" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f00fff"
+            android:hint="456" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00ff00"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00fff0"
+                android:hint="123" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_purple"
+            app:tabIndicatorColor="@android:color/holo_orange_dark"
+            app:tabIndicatorHeight="10dp"
+            app:tabMinWidth="100dp"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@android:color/holo_blue_bright"
+            app:tabTextColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/tabFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="TabFragment"/>
+
+        <Button
+            android:id="@+id/coordinator_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="CoordinatorLayout"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="#33ff00" />
+</RelativeLayout>
